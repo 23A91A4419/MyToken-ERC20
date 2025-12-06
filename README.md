@@ -38,22 +38,22 @@ This project was completed as part of a blockchain learning exercise to understa
 
 ## How to Use
 
-### ✅ Check Balance
+###  Check Balance
 ```solidity
 balanceOf(address) → returns uint256
 ```
 
-### ✅ Transfer Tokens
+###  Transfer Tokens
 ```solidity
 transfer(address to, uint256 amount) → returns bool
 ```
 
-### ✅ Approve a Spender
+###  Approve a Spender
 ```solidity
 approve(address spender, uint256 amount) → returns bool
 ```
 
-### ✅ Transfer on Behalf of Owner
+###  Transfer on Behalf of Owner
 ```solidity
 transferFrom(address from, address to, uint256 amount) → returns bool
 ```
@@ -78,25 +78,4 @@ These screenshots show:
 
 ---
 
-## Project Structure
-```
-MyToken-ERC20/
-│
-├── contracts/
-│     └── MyToken.sol
-│
-├── screenshots/
-│     ├── compilation_success.png
-│     ├── deployment.png
-│     ├── token_info.png
-│     ├── transfer_test.png
-│     └── approve.png
-│
-└── README.md
-```
-
----
-
-## License
-This project is open for learning and personal use.
 
