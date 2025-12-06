@@ -27,7 +27,6 @@ contract MyToken {
         emit Transfer(address(0), msg.sender, totalSupply);
     }
 
-    // --- STEP 4: TRANSFER FUNCTION ---
     function transfer(address _to, uint256 _value) public returns (bool success) {
         require(_to != address(0), "Cannot transfer to zero address");
         require(balanceOf[msg.sender] >= _value, "Insufficient balance");
@@ -39,7 +38,7 @@ contract MyToken {
         return true;
     }
 
-    // --- STEP 5: APPROVE FUNCTION ---
+  
     function approve(address _spender, uint256 _value) public returns (bool success) {
         require(_spender != address(0), "Cannot approve zero address");
 
@@ -49,7 +48,7 @@ contract MyToken {
         return true;
     }
 
-    // --- STEP 6: TRANSFERFROM FUNCTION ---
+  
     function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {
         require(_to != address(0), "Cannot transfer to zero address");
         require(balanceOf[_from] >= _value, "Insufficient balance");
@@ -64,7 +63,7 @@ contract MyToken {
         return true;
     }
 
-    // --- STEP 7: HELPER FUNCTIONS (OPTIONAL) ---
+    
 
     // Returns total supply
     function getTotalSupply() public view returns (uint256) {
